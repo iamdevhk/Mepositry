@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:background="@drawable/ds"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="190dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+
+            android:textSize="30dp"
+            android:text="Welcome: Login as"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:text="20sp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/Doctor"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:buttonTint="#FF9800"
+                android:textColor="#ffff"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/patient"
+                android:buttonTint="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:layout_marginBottom="5sp"
+                android:text="Patient"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150sp"
+            android:backgroundTint="#FF9800"
+            android:gravity="center_horizontal"
+            android:onClick="enter"
+            android:text="Enter"
+            android:textColor="#ffff" />
+    </LinearLayout>
+</RelativeLayout>
